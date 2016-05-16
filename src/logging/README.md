@@ -3,7 +3,7 @@
 ## Usage
 
 ```javascript
-import {LogService, ILog} from "core/common";
+import {LogService, ILog} from "ssv-ng2-core";
 
 const id = "auth.service";
 
