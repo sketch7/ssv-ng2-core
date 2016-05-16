@@ -1,9 +1,22 @@
 # Logger Sample
 
+## Register providers
+
+```ts
+
+import {LOGGER_PROVIDERS} from "ssv-ng2-core";
+
+// within bootstrap or AppComponent
+providers: [
+	LOGGER_PROVIDERS
+]
+
+```
+
 ## Usage
 
-```javascript
-import {LogService, ILog} from "ssv-ng2-core";
+```ts
+import {LoggerFactory, ILog} from "ssv-ng2-core";
 
 const id = "auth.service";
 
