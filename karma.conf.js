@@ -12,7 +12,7 @@ module.exports = function (config) {
 					"systemjs": "node_modules/systemjs/dist/system.js",
 					"system-polyfills": "node_modules/systemjs/dist/system-polyfills.js",
 					"es6-module-loader": "node_modules/es6-module-loader/dist/es6-module-loader.js",
-					"n:*": "node_modules/*",
+					"n:*": "node_modules/*"
 				},
 				map: {
 					"@angular": "n:@angular",
@@ -49,7 +49,7 @@ module.exports = function (config) {
 			"node_modules/zone.js/dist/fake-async-test.js",
 			
 			"src/**/*.spec.ts",
-			"src/*.spec.ts",
+			"src/*.spec.ts"
 		],
 		exclude: [],
 		preprocessors: {},
