@@ -83,7 +83,6 @@ The following process need to be executed in order to get started.
 
 ```bash
 npm install
-jspm install
 ```
 
 
