@@ -5,6 +5,7 @@
 [contribWiki]: ./doc/CONTRIBUTION.md
 [releaseWorkflowWiki]: ./doc/RELEASE-WORKFLOW.md
 
+[npm]: https://www.npmjs.com
 [jspm]: http://jspm.io
 [typings]: https://github.com/typings/typings
 
@@ -23,10 +24,12 @@ In order to contribute please read the [Contribution guidelines][contribWiki].
 [Change logs][changeLog] | [Project Repository][projectUri] | [Contribution guidelines][contribWiki]
 
 # Installation
-Get library via [jspm]
+
+Get library via [npm]
 ```bash
-jspm install ssv-ng2-core
+npm install ssv-ng2-core --save
 ```
+
 TypeScript Typings via [typings]
 ```bash
 typings install github:sketch7/ssv-ng2-core --save
@@ -34,10 +37,21 @@ typings install github:sketch7/ssv-ng2-core --save
 
 # Usage
 ```ts
-// todo: add sample
-import {logger} from "ssv-ng2-core";
+import {LoggerFactory, ILog} from "ssv-ng2-core";
+
+
+private logger: ILog;
+
+constructor(
+	loggerFactory: LoggerFactory
+) {
+	this.logger = loggerFactory.getInstance(id);
+}
 
 ```
+
+## Logger
+Read more how to use [Logger](./src/logging/README.md).
 
 
 # Getting Started
@@ -53,7 +67,7 @@ Install/setup the following:
 
 
 ```bash
-npm install -g git gulp typings karma-cli jspm
+npm install -g git gulp typings karma-cli
 ```
 
 
