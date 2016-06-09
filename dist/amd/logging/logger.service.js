@@ -59,3 +59,5 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
     }());
     exports.Log = Log;
 });
+
+//# sourceMappingURL=logger.service.js.map

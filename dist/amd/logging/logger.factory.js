@@ -24,3 +24,5 @@ define(["require", "exports", "@angular/core", "./logger.service"], function (re
     }());
     exports.LoggerFactory = LoggerFactory;
 });
+
+//# sourceMappingURL=logger.factory.js.map

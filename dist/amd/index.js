@@ -5,3 +5,5 @@ define(["require", "exports", "./logging/logging"], function (require, exports, 
     }
     __export(logging_1);
 });
+
+//# sourceMappingURL=index.js.map
