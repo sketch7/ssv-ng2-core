@@ -12,7 +12,7 @@ export class LoggerFactory {
 
 	}
 
-	getInstance(sourceId: string): ILog {
+	get(sourceId: string): ILog {
 		return new Log(sourceId, this.loggerService);
 	}
 }

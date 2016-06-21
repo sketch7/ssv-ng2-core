@@ -28,7 +28,7 @@ export class AuthService {
 	constructor(
 		loggerFactory: LoggerFactory
 	) {
-		this.logger = loggerFactory.getInstance(id);
+		this.logger = loggerFactory.get(id);
 	}
 	
 	login() {
