@@ -13,7 +13,7 @@ define(["require", "exports", "@angular/core", "./logger.service"], function (re
         function LoggerFactory(loggerService) {
             this.loggerService = loggerService;
         }
-        LoggerFactory.prototype.getInstance = function (sourceId) {
+        LoggerFactory.prototype.get = function (sourceId) {
             return new logger_service_1.Log(sourceId, this.loggerService);
         };
         LoggerFactory = __decorate([

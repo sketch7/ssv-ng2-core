@@ -3,5 +3,5 @@ import { LoggerService } from "./logger.service";
 export declare class LoggerFactory {
     private loggerService;
     constructor(loggerService: LoggerService);
-    getInstance(sourceId: string): ILog;
+    get(sourceId: string): ILog;
 }
