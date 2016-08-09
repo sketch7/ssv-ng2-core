@@ -1,22 +1,30 @@
-import {
-	it,
-	inject,
-	describe,
-	expect,
-	beforeEach,
-	beforeEachProviders
-} from "@angular/core/testing";
+import {inject, TestBed} from "@angular/core/testing";
+
 import {LoggerService} from "./logger.service";
 
 describe("LoggerService", () => {
-	beforeEachProviders(() => [LoggerService]);
+
+	let SUT: LoggerService;
+
 	beforeEach(() => {
-		spyOn(console, "log");
+
+		TestBed.configureTestingModule({
+			providers: [LoggerService]
+		});
 	});
 
-	it("should log successfully", inject([LoggerService], (logger: LoggerService) => {
+	beforeEach(inject([
+		LoggerService
+	], (
+		logger: LoggerService
+	) => {
+			SUT = logger;
+			spyOn(console, "log");
+		}));
+
+	it("should log successfully", () => {
 		let message = "Hello";
-		logger.log("log", message);
+		SUT.log("log", message);
 		expect(console.log).toHaveBeenCalledWith(message);
-	}));
+	});
 });
