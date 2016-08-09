@@ -4,12 +4,12 @@
   "description": "ssv core angular2 components, utilities and services",
   "keywords": [
     "sketch7",
+    "ssv",
     "ng2",
     "angular2",
     "core",
     "utils",
-    "logger",
-    "router"
+    "logger"
   ],
   "author": "Stephen Lautier <stephen.lautier@outlook.com>",
   "license": "MIT",
@@ -20,8 +20,14 @@
     "url": "https://github.com/sketch7/ssv-ng2-core.git"
   },
   "devDependencies": {
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/platform-browser": "^2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
     "del": "^2.2.1",
     "es6-module-loader": "^0.17.11",
+    "es6-shim": "^0.35.1",
     "gulp": "^3.9.1",
     "gulp-bump": "^2.1.0",
     "gulp-conventional-changelog": "^1.1.0",
@@ -38,23 +44,21 @@
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-mocha-reporter": "^2.0.4",
-    "karma-systemjs": "^0.14.0",
+    "karma-typescript-preprocessor": "^0.2.1",
     "merge2": "^1.0.2",
+    "reflect-metadata": "^0.1.3",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.1",
+    "rxjs": "5.0.0-beta.6",
     "systemjs": "^0.19.31",
     "tslint": "^3.11.0",
     "typescript": "^1.8.10",
     "yargs": "^4.7.1",
-    "@angular/core": "^2.0.0-rc.2",
-    "rxjs": "5.0.0-beta.6",
-    "zone.js": "^0.6.12",
-    "reflect-metadata": "^0.1.3",
-    "es6-shim": "^0.35.1"
+    "zone.js": "^0.6.12"
   },
   "dependencies": {},
   "peerDependencies": {
-    "@angular/core": "^2.0.0-rc.2",
+    "@angular/core": "^2.0.0-rc.5",
     "rxjs": "5.0.0-beta.6",
     "zone.js": "^0.6.12"
   },
