@@ -7,22 +7,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "./logger.service"], function (require, exports, core_1, logger_service_1) {
+define(["require", "exports", "@angular/core", "./logging/logging"], function (require, exports, core_1, logging_1) {
     "use strict";
-    var LoggerFactory = (function () {
-        function LoggerFactory(loggerService) {
-            this.loggerService = loggerService;
+    var CoreModule = (function () {
+        function CoreModule() {
         }
-        LoggerFactory.prototype.get = function (sourceId) {
-            return new logger_service_1.Log(sourceId, this.loggerService);
-        };
-        LoggerFactory = __decorate([
-            core_1.Injectable(), 
-            __metadata('design:paramtypes', [logger_service_1.LoggerService])
-        ], LoggerFactory);
-        return LoggerFactory;
+        CoreModule = __decorate([
+            core_1.NgModule({
+                providers: [logging_1.LOGGER_PROVIDERS]
+            }), 
+            __metadata('design:paramtypes', [])
+        ], CoreModule);
+        return CoreModule;
     }());
-    exports.LoggerFactory = LoggerFactory;
+    exports.CoreModule = CoreModule;
 });
 
-//# sourceMappingURL=logger.factory.js.map
+//# sourceMappingURL=module.js.map

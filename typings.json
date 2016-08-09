@@ -1,5 +1,5 @@
 {
-	"name": "ssv-ng2-core",
+	"name": "@ssv/ng2-core",
 	"main": "dist/typings/index.d.ts",
 	"globalDependencies": {
 		"es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654"
