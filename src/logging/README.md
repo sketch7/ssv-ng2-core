@@ -1,22 +1,11 @@
-# Logger Sample
+# Logger
+A minimal logger with a structured log format and replacable LoggingService which logs to console.
 
-## Register providers
-
-```ts
-
-import {LOGGER_PROVIDERS} from "ssv-ng2-core";
-
-// within bootstrap or AppComponent
-providers: [
-	LOGGER_PROVIDERS
-]
-
-```
 
 ## Usage
 
 ```ts
-import {LoggerFactory, ILog} from "ssv-ng2-core";
+import {LoggerFactory, ILog} from "@ssv/ng2-core";
 
 const id = "auth.service";
 

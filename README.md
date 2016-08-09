@@ -9,13 +9,13 @@
 [jspm]: http://jspm.io
 [typings]: https://github.com/typings/typings
 
-# ssv-ng2-core
+# @ssv/ng2-core
 [![Build status](https://ci.appveyor.com/api/projects/status/2e0an5hvxtfs08mf?svg=true)](https://ci.appveyor.com/project/chiko/ssv-ng2-core)
 [![Build status](https://ci.appveyor.com/api/projects/status/2e0an5hvxtfs08mf/branch/master?svg=true)](https://ci.appveyor.com/project/chiko/ssv-ng2-core/branch/master)
 [![bitHound Overall Score](https://www.bithound.io/github/sketch7/ssv-ng2-core/badges/score.svg)](https://www.bithound.io/github/sketch7/ssv-ng2-core)
-[![npm version](https://badge.fury.io/js/ssv-ng2-core.svg)](https://badge.fury.io/js/ssv-ng2-core)
+[![npm version](https://badge.fury.io/js/%40ssv%2Fng2-core.svg)](https://badge.fury.io/js/%40ssv%2Fng2-core)
 
-Sketch7 Angular2 core components and utilities
+Core utilities and services for angular2, such as logger.
 
 In order to contribute please read the [Contribution guidelines][contribWiki].
 
@@ -27,7 +27,7 @@ In order to contribute please read the [Contribution guidelines][contribWiki].
 
 Get library via [npm]
 ```bash
-npm install ssv-ng2-core --save
+npm install @ssv/ng2-core --save
 ```
 
 TypeScript Typings via [typings]
@@ -36,22 +36,26 @@ typings install github:sketch7/ssv-ng2-core --save
 ```
 
 # Usage
+
+## Register module
+
 ```ts
-import {LoggerFactory, ILog} from "ssv-ng2-core";
+import {CoreModule} from "@ssv/ng2-core";
 
-
-private logger: ILog;
-
-constructor(
-	loggerFactory: LoggerFactory
-) {
-	this.logger = loggerFactory.getInstance(id);
+@NgModule({
+    imports: [
+        CoreModule
+    ],
+    declarations: [
+        AppComponent
+    ]
 }
-
+export class AppModule {
+}
 ```
 
-## Logger
-Read more how to use [Logger](./src/logging/README.md).
+# Features
+ - [Logger](./src/logging/README.md)
 
 
 # Getting Started
@@ -59,10 +63,10 @@ Read more how to use [Logger](./src/logging/README.md).
 ## Setup Machine for Development
 Install/setup the following:
 
-- NodeJS v4+
+- NodeJS v5+
 - Visual Studio Code or similar code editor
 - TypeScript 1.8+
-- SourceTree, SmartGit (or similar)
+- Git + SourceTree, SmartGit or similar (optional)
 - Ensure to install **global NPM modules** using the following:
 
 
@@ -73,8 +77,7 @@ npm install -g git gulp typings karma-cli
 
 ### Cloning Repo
 
-- Open SourceTree
-- Clone project repo from [project git][projectGit]
+- Run `git clone https://github.com/sketch7/ssv-ng2-core.git`
 - Switch to `develop` branch
 
 
