@@ -41,7 +41,7 @@ SystemJS.config({
 		"@angular/forms/testing": "npm:@angular/forms/bundles/forms-testing.umd.js",
 	},
 	packages: {
-		"@ssv/ng2-core": { mainpm: "dist/amd/index.js", defaultExtension: "js" },
+		"@ssv/ng2-core": { main: "dist/amd/index.js", defaultExtension: "js" },
 	}
 });
 
