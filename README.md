@@ -40,7 +40,7 @@ typings install github:sketch7/ssv-ng2-core --save
 ## Register module
 
 ```ts
-import {CoreModule} from "@ssv/ng2-core";
+import { CoreModule } from "@ssv/ng2-core";
 
 @NgModule({
     imports: [
