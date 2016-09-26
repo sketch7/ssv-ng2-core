@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const pkg = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
 const srcRoot = "src";
-const typings = "typings/index.d.ts";
+const typings = "node_modules/@types/**/*.d.ts";
 
 module.exports = {
 	output: {

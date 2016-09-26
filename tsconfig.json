@@ -11,9 +11,9 @@
 		"noFallthroughCasesInSwitch": true,
 		"noEmitOnError": true
 	},
-	"exclude": [
-		"node_modules",
-		"wwwroot",
-		"dist"
+	"include": [
+		"src/**/*",
+		"test/**/*",
+		"node_modules/@types/**/*.d.ts"
 	]
 }

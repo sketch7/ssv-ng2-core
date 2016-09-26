@@ -8,7 +8,7 @@ module.exports = function (config) {
 		files: [
 			"node_modules/systemjs/dist/system.src.js",
 
-			"node_modules/es6-shim/es6-shim.js",
+			"node_modules/core-js/client/shim.js",
 
 			"node_modules/reflect-metadata/Reflect.js",
 			"node_modules/zone.js/dist/zone.js",
