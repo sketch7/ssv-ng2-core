@@ -63,9 +63,9 @@ export class AppModule {
 ## Setup Machine for Development
 Install/setup the following:
 
-- NodeJS v5+
+- NodeJS v6+
 - Visual Studio Code or similar code editor
-- TypeScript 1.8+
+- TypeScript 2.0+
 - Git + SourceTree, SmartGit or similar (optional)
 - Ensure to install **global NPM modules** using the following:
 

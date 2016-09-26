@@ -1,7 +1,7 @@
-import {Injectable} from "@angular/core";
+import { Injectable } from "@angular/core";
 
-import {ILog} from "./logger.model";
-import {Log, LoggerService} from "./logger.service";
+import { ILog } from "./logger.model";
+import { Log, LoggerService } from "./logger.service";
 
 @Injectable()
 export class LoggerFactory {

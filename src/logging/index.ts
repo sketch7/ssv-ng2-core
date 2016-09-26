@@ -1,5 +1,5 @@
-import {LoggerFactory} from "./logger.factory";
-import {LoggerService} from "./logger.service";
+import { LoggerFactory } from "./logger.factory";
+import { LoggerService } from "./logger.service";
 
 export * from "./logger.service";
 export * from "./logger.factory";
