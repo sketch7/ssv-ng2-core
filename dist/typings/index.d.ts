@@ -1,2 +1,2 @@
-export * from "./logging/logging";
+export * from "./logging/index";
 export * from "./module";

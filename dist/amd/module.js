@@ -7,14 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "./logging/logging"], function (require, exports, core_1, logging_1) {
+define(["require", "exports", "@angular/core", "./logging/index"], function (require, exports, core_1, index_1) {
     "use strict";
     var CoreModule = (function () {
         function CoreModule() {
         }
         CoreModule = __decorate([
             core_1.NgModule({
-                providers: [logging_1.LOGGER_PROVIDERS]
+                providers: [
+                    index_1.LOGGER_PROVIDERS
+                ]
             }), 
             __metadata('design:paramtypes', [])
         ], CoreModule);

@@ -1,5 +1,15 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/sketch7/ssv-ng2-core/compare/0.1.0...v0.2.0) (2016-09-26)
+
+
+### Features
+
+* **packages:** updated to angular 2.0 ([a7c5663](https://github.com/sketch7/ssv-ng2-core/commit/a7c5663))
+
+
+
 <a name="0.1.0"></a>
-# [0.1.0](https://github.com/sketch7/ssv-ng2-core/compare/0.0.1-rc.2...v0.1.0) (2016-08-09)
+# [0.1.0](https://github.com/sketch7/ssv-ng2-core/compare/0.0.1-rc.2...0.1.0) (2016-08-09)
 
 
 ### Features

@@ -11,4 +11,4 @@ define(["require", "exports", "./logger.factory", "./logger.service", "./logger.
     ];
 });
 
-//# sourceMappingURL=logging.js.map
+//# sourceMappingURL=index.js.map
