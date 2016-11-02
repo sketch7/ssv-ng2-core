@@ -1,33 +1,18 @@
-class Farm {
+import { ContainerMocker } from "./container-mocker";
+import { Farm } from "./farm";
+import { AnimalFactory } from "./animal-factory";
 
-	constructor(
-		private animalFactory: AnimalFactory
-	) {
-
-	}
-
-	build() {
-		const animals = ["cow", "chicken"];
-		return animals.map(x => {
-			return this.animalFactory.create(x);
-		});
-	}
-
-}
-
-class AnimalFactory {
-	create(animal: string) {
-		return {
-			type: animal
-		};
-	}
-}
 
 describe("Test Sample", () => {
 	let SUT: Farm;
 
 	beforeEach(() => {
-		SUT = new Farm(new AnimalFactory());
+		const container = new ContainerMocker([
+			Farm,
+			AnimalFactory
+		]);
+
+		SUT = container.get<Farm>(Farm);
 	});
 
 	describe("given farm build", () => {
