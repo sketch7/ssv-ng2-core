@@ -14,7 +14,8 @@ export class AnimalFactory {
 	create(animal: string) {
 		return {
 			type: animal,
-			sunny: this.environment.isSunny()
+			sunny: this.environment.isSunny(),
+			rainy: undefined as boolean
 		};
 	}
 }
